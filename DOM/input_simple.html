@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Simple</title>
+    <style>
+        #result {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        #oneErr,
+        #twoErr {
+            display: none;
+            color: red;
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Title</h1>
+    <div id="result"></div>
+    <div>
+        <input id="one" type="text" placeholder="First Number"> <br>
+        <small id="oneErr">Please Enter correct number</small>
+    </div>
+    <div>
+        <input id="two" type="text" placeholder="Second Number"> <br>
+        <small id="twoErr">Please Enter correct number</small>
+    </div>
+    <button id="click">Click</button>
+
+
+    <script>
+
+        document.querySelector("#one").onkeyup = function() {
+            let one = parseInt(document.querySelector("#one").value)
+            
+            if( !isNaN(one) ) {
+                document.querySelector("#oneErr").style.display = "none"
+            }
+        }
+        
+        document.querySelector("#two").onkeyup = function() {
+            let two = parseInt(document.querySelector("#two").value)
+            
+            if( !isNaN(one) ) {
+                document.querySelector("#twoErr").style.display = "none"
+            }
+        }
+
+        document.querySelector("#click").onclick = function() {
+            let one = parseInt(document.querySelector("#one").value)
+            let two = parseInt(document.querySelector("#two").value)
+            if( isNaN(one) ) {
+                document.querySelector("#oneErr").style.display = "inline"
+            }
+
+            if( isNaN(two) ) {
+                document.querySelector("#twoErr").style.display = "inline"
+            }
+
+            let result = one + two
+
+            if ( !isNaN(result) ) {
+                document.querySelector("#result").textContent = result
+            }
+
+            
+        }
+    </script>
+
+</body>
+</html>
