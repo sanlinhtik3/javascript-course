@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        Box 1
+    </div>
+
+    <!-- <div class="box2">
+        Box 2
+    </div> -->
+
+    <h1>
+        My name is <b class="name">Hunter</b>
+    </h1>
+
+    <script>
+        // document.querySelector(".box1").textContent = "Hi <i>DOM</i>"
+        // document.querySelector(".box2").innerHTML = "Hi <i>DOM</i>"
+
+        // let hi = document.createTextNode("Hi DOM...")
+        // document.querySelector(".box1").appendChild(hi)
+
+        let hi = document.createElement("i")
+        hi.textContent = "Hi DOM..."
+        hi.setAttribute("title", "A new i")
+        hi.classList.add("button", "list")
+        let aa = hi.cloneNode(true)
+        let box1 = document.querySelector('.box1')
+    
+        // box1.appendChild(hi)
+        box1.insertBefore(hi, box1.firstChild)
+
+
+        let name = document.querySelector(".name").parentNode
+
+    </script>
+</body>
+</html>

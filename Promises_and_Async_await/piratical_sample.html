@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Piratical Sample
+        // fetch("https://api.covid19api.com/summary")
+        //     .then( res => res.json() )
+        //     .then( data => {
+        //         const global = data.Global;
+        //         const allCountries = data.Countries;
+
+        //         const myanmar = allCountries.find( c => c.Country === "Myanmar" )
+
+        //         console.log("Global : ", global, "Countries", myanmar)
+        //     } )
+
+        // async, await
+        async function covidInfo() {
+            const res = await fetch("https://api.covid19api.com/summary");
+            const data = await res.json();
+
+            // console.log(data)
+            const global = data.Global;
+            const allCountries = data.Countries;
+            const myanmar = allCountries.find(c=>c.Country === "Myanmar")
+            console.log(myanmar)
+        }
+        
+        covidInfo()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+        // let car = {
+        //     color : "Red",
+        //     wheels : 4,
+        //     drive() {
+        //         console.log("This car is driving")
+        //     }
+        // }
+        
+
+
+        // Class
+        // class Car {
+        //     color = "Red"
+        //     wheels = 4
+        //     drive() {
+        //         console.log("This car is driving")
+        //     }
+        // }
+
+        // let hunter = new Car
+
+        // class Car {
+        //     static color = "Red"
+
+        //     static sum(a, b) {
+        //         return a + b
+        //     }
+        // }
+
+
+        // Access-Control Modifier
+        // Public, Private, Protected, Static
+
+        // class Car {
+        //     private hp = 100;
+        //     public color = "Red"
+
+        //     static info () {
+        //         console.log(`Horse Power: ${this.hp}`)
+        //     }
+        // }
+        // let car = new Car()
+        // car.hp = 200;    // Error: cannot access private property
+        // car.info()       // Horse Power : 100
+
+        class Car {
+            #hp = 100       // Private
+            color = "Red"   // Public
+
+            static info () {
+                console.log(`Horse Power: ${this.#hp}`)
+            }
+        }
+
+        let car = new Car()
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

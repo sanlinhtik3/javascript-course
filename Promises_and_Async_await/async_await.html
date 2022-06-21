@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //async, await
+
+
+        function add1500() {
+            let result = 0;
+
+            for(let i=1; i <= 1500; i++) {
+                result += i
+            }
+
+            return result
+        }
+
+        async function add1500after() {
+            let result = await add1500()
+            console.log(result)
+        }
+
+        console.log("First Processes")
+        add1500after()
+        console.log("Third Processes")
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

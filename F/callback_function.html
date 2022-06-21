@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Callback Function
+        function hunter(num, fun) {
+            let result = fun(num);   // 25
+            return result * 2        // 50
+        }
+
+        
+        // hunter(5, function(x){
+        //     return x + 1
+        // })
+
+        hunter(5, function(x){
+            return x * x     // 25
+        })
+        
+        
+
+    </script>
+    
+</body>
+</html>

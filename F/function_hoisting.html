@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Function Hoisting
+
+        // Variable Hoisting
+        var g = a + b
+        var a = 1
+        var b = 2
+
+        var a
+        var b
+        var g = a + b
+        a = 1
+        b = 2
+
+        // Function Hoisting
+        console.log(add(2, 4))
+
+        let add = function (a, b) {
+            return a + b
+        }
+
+
+    </script>
+
+</body>
+</html>

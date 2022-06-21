@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Switch Statement
+
+        // switch( 1 - 1 ) {
+        //     case 1:
+        //         console.log(1)
+        //         break
+        //     case 2:
+        //         console.log(2)
+        //         break
+        //     case 3:
+        //         console.log(3)
+        //         break
+        //     case 4:
+        //         console.log(4)
+        //         break
+        //     case 5:
+        //         console.log(5)
+        //         break
+        //     default:
+        //         console.log("I'm Default.")
+        // }
+
+        // switch( 1 - 1) {
+        //     case 1:
+        //     case 2:
+        //     default:
+        //         console.log("I'm Default.")
+        // }
+
+        let people = [
+            {name: "Ko Aung", age: 21, gender: "M"},
+            {name: "Ma Aung", age: 20, gender: "F"},
+            {name: "Ko Toe", age: 21, gender: "m"},
+            {name: "Ko Tun", age: 18}
+        ]
+
+        let result = people.map(function(p){
+            switch(p.gender) {
+                case "m":
+                case "M":
+                    p.gender = "Male"
+                    break
+                case "f":
+                case "F":
+                    p.gender = "Female"
+                    break
+                default:
+                    p.gender = "Unknown"
+            }
+            return p
+        })
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
